@@ -1,2 +1,2 @@
-My personal website, but remade using react for better organisation and cleaner
-code.
+My personal website, but remade using react with typescript for better
+organisation and cleaner code.
