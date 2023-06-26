@@ -30,7 +30,7 @@ const styles = {
     "justify-between",
     "items-center",
   ],
-  list: ["flex", "justify-between", "items-center"],
+  list: ["flex", "justify-between", "items-center", "list-none"],
 };
 
 export default Navbar;

@@ -55,6 +55,7 @@ const styles = {
     "sm:hover:scale-110",
     "sm:mr-2",
     "md:mr-6",
+    "list-none",
   ].concat(trans),
   link: ["flex", "justify-center", "items-center"],
   svgs: ["p-[2px]", "mr-4", "sm:mr-1", "w-6", "h-6", "fill-inherit"],
