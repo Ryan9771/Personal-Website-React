@@ -1,10 +1,11 @@
 import getStyles from "../../Style";
 import NavbarItem from "./NavbarItem";
+import HomeLogo from "./HomeLogo";
 
 function Navbar() {
   return (
     <nav className={getStyles(styles, "ctn")}>
-      <NavbarItem id="about-nav" href="#about" title="About" />
+      <HomeLogo />
       <ul className={getStyles(styles, "list")}>
         <NavbarItem id="about-nav" href="#about" title="About" />
         <NavbarItem id="" href="#projects" title="Projects" />
