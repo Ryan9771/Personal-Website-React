@@ -22,6 +22,7 @@ function Home() {
   );
 }
 
+/* STYLES */
 const styles = {
   ctn: ["flex", "w-full", "mt-24", "sm: mt-32"],
   introImgBox: [
@@ -123,6 +124,7 @@ const styles = {
   ],
 };
 
+/* IMG CONSTANTS */
 const img1 = (
   <img
     className={getStyles(styles, "imgTop")}

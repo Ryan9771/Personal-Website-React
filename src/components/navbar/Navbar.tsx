@@ -16,6 +16,7 @@ function Navbar() {
   );
 }
 
+/* STYLES */
 const styles = {
   ctn: [
     "bg-primary",

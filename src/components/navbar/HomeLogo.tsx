@@ -18,6 +18,7 @@ function HomeLogo() {
   );
 }
 
+/* STYLES */
 const styles = {
   ctn: ["flex", "items-center", "nav-li"],
   iconCtn: ["fill-inherit", "flex", "items-center"],

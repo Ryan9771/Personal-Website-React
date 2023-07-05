@@ -1,6 +1,8 @@
+import getStyles from "./Style";
+
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
-import getStyles from "./Style";
+import HomeAbout from "./components/homeAbout/HomeAbout";
 
 export default function App() {
   return (
@@ -8,6 +10,7 @@ export default function App() {
       <Navbar />
       <Home />
       <hr className={getStyles(styles, "hr")} />
+      <HomeAbout />
     </>
   );
 }
