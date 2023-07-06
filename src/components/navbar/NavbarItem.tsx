@@ -7,7 +7,6 @@ interface Props {
 }
 
 function getSvg(href: string) {
-  console.log(href);
   switch (href) {
     case "#about": {
       return (

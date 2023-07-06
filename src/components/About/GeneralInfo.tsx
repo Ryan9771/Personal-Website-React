@@ -1,21 +1,60 @@
 import getStyles from "../../Style";
 
-interface Props {
-  firstPage: boolean;
-}
-
-function GeneralInfo({ firstPage }: Props) {
+function GeneralInfo() {
   return (
-    <div>
-      <div></div>
+    <div className={getStyles(styles, "ctn")}>
+      <div className={getStyles(styles, "titleCtn")}>
+        <span className={getStyles(styles, "titleCtnText")}>About Me</span>
+      </div>
+
+      <div className={getStyles(styles, "divider")}></div>
+
+      <div className={getStyles(styles, "infoCtn")}>
+        <div>
+          <div className={getStyles(styles, "infoFirstHeading")}>General</div>
+          <div className={getStyles(styles, "infoFirstText")}>
+            I am a 2nd year computing student at Imperial College London. I am a
+            fast learner, since my journey in this field began only a year ago.
+            In the span of a year, I have learnt multiple languages, frameworks,
+            and touched different areas such as AI and Machine learning.
+            Computing is truly a remarkable field that I wish to pursue to make
+            more information readily accessible to people.
+          </div>
+          <div className={getStyles(styles, "infoSecondHeading")}>
+            Interests
+          </div>
+          <div className={getStyles(styles, "infoSecondTextCtn")}>
+            <span className={getStyles(styles, "infoSecondText")}>
+              I love Web and App development. I have made multiple repositories
+              on{" "}
+              <a
+                className={getStyles(styles, "link")}
+                href="https://github.com/Ryan9771"
+                target="_blank"
+              >
+                GitHub
+              </a>
+              experimenting with React Native. I am also interested in AI and
+              Machine learning, after having constructed an OCR-related API in
+              python involving these areas, during my internship at
+              <a
+                className={getStyles(styles, "link")}
+                href="https://thewalnut.ai/"
+                target="_blank"
+              >
+                The Walnut.ai
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 const styles = {
   ctn: [
-    "hidden",
-    "about-ctn",
+    "flex",
     "w-full",
     "h-full",
     "flex-col",
