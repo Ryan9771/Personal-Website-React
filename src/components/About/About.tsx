@@ -3,15 +3,21 @@ import { useState } from "react";
 
 import GeneralInfo from "./GeneralInfo";
 import ContactInfo from "./ContactInfo";
+import ArrowButton from "./ArrowButton";
 
 function About() {
   const [firstPage, setFirstPage] = useState(true);
 
   return (
-    <div className={getStyles(styles, "ctn")}>
-      {/* {firstPage ? <GeneralInfo /> : <ContactInfo />} */}
-      <ContactInfo />
-    </div>
+    <>
+      <section className={getStyles(styles, "ctn")}>
+        {firstPage ? <GeneralInfo /> : <ContactInfo />}
+      </section>
+
+      <section className={getStyles(styles, "btnsCtn")}>
+        <ArrowButton firstPage={firstPage} setFirstPage={setFirstPage} />
+      </section>
+    </>
   );
 }
 
@@ -29,6 +35,7 @@ const styles = {
     "md:mt-24",
     "lg:mt-22",
   ],
+  btnsCtn: ["w-full", "flex", "flex-col", "justify-center", "items-center"],
 };
 
 export default About;
