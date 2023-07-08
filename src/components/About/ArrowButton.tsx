@@ -8,17 +8,21 @@ interface Props {
 function ArrowButton({ firstPage, setFirstPage }: Props) {
   const handleClick = () => {
     if (firstPage) {
-      // Animate transition
+      // rotate -180 degrees
     } else {
-      // Animate transition
+      // rotate 0 degrees
     }
     setFirstPage(!firstPage);
   };
 
   return (
-    <div className={getStyles(styles, "ctn")}>
+    <div onClick={handleClick} className={getStyles(styles, "ctn")}>
       <svg
-        className={getStyles(styles, "svg")}
+        className={
+          firstPage
+            ? getStyles(styles, "svgFstPage")
+            : getStyles(styles, "svgSndPage")
+        }
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
       >
@@ -40,7 +44,8 @@ const styles = {
     "trans",
     "cursor-pointer",
   ],
-  svg: ["w-8", "h-8", "group-hover:fill-lblue", "trans"],
+  svgFstPage: ["w-8", "h-8", "group-hover:fill-lblue", "trans", "rotate-0"],
+  svgSndPage: ["w-8", "h-8", "group-hover:fill-lblue", "trans", "-rotate-180"],
 };
 
 export default ArrowButton;
