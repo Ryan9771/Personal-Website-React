@@ -4,6 +4,7 @@ import { useState } from "react";
 import GeneralInfo from "./GeneralInfo";
 import ContactInfo from "./ContactInfo";
 import ArrowButton from "./ArrowButton";
+import TabButton from "./TabButton";
 
 function About() {
   const [firstPage, setFirstPage] = useState(true);
@@ -15,6 +16,7 @@ function About() {
       </section>
 
       <section className={getStyles(styles, "btnsCtn")}>
+        <TabButton firstPage={firstPage} setFirstPage={setFirstPage} />
         <ArrowButton firstPage={firstPage} setFirstPage={setFirstPage} />
       </section>
     </>
