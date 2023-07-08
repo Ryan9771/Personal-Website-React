@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import HomeAbout from "./components/homeAbout/HomeAbout";
 import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <LineBreakLight />
       <About />
       <LineBreakDark />
+      <Projects />
     </>
   );
 }

@@ -2,8 +2,6 @@ export interface RawStyles {
   [key: string]: string[];
 }
 
-export const trans = ["transition", "duration-200"];
-
 function getStyles(stylesList: RawStyles, key: string): string {
   const requiredStyle = stylesList[key];
   if (!requiredStyle) {

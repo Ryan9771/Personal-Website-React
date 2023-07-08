@@ -1,4 +1,4 @@
-import getStyles, { trans } from "../../Style";
+import getStyles from "../../Style";
 
 interface Props {
   id: string;
@@ -96,7 +96,8 @@ const styles = {
     "sm:mr-2",
     "md:mr-6",
     "list-none",
-  ].concat(trans),
+    "trans",
+  ],
   link: ["flex", "justify-center", "items-center"],
   svgs: ["p-[2px]", "mr-4", "sm:mr-1", "w-6", "h-6", "fill-inherit"],
   text: ["hidden", "sm:inline", "text-base", "font-medium"],
