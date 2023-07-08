@@ -7,11 +7,6 @@ interface Props {
 
 function ArrowButton({ firstPage, setFirstPage }: Props) {
   const handleClick = () => {
-    if (firstPage) {
-      // rotate -180 degrees
-    } else {
-      // rotate 0 degrees
-    }
     setFirstPage(!firstPage);
   };
 
