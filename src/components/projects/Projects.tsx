@@ -1,9 +1,15 @@
 import getStyles from "../../Style";
+import ProjectLink from "./ProjectLink";
+
+interface Props {
+  maxView: number;
+}
 
 function Projects() {
   return (
     <section className={getStyles(styles, "ctn")}>
       <span className={getStyles(styles, "title")}>Projects</span>
+      <div className={getStyles(styles, "projectCtn")}></div>
     </section>
   );
 }
