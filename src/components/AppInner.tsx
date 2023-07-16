@@ -14,7 +14,7 @@ function AppInner() {
       <LineBreakLight />
       <About />
       <LineBreakDark />
-      <Projects />
+      <Projects maxView={6} />
     </>
   );
 }

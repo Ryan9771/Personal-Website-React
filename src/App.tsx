@@ -10,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppInner />} />
-          <Route path="/projects" element={<Projects maxView={3} />} />
+          <Route path="/projects" element={<Projects maxView={null} />} />
         </Routes>
       </BrowserRouter>
     </>

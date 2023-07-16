@@ -2,7 +2,7 @@ import getStyles from "../../Style";
 import { translate } from "./translator";
 
 interface Props {
-  maxView: number;
+  maxView: null | number;
 }
 
 const projects = [
@@ -15,11 +15,15 @@ const projects = [
 ];
 
 function Projects({ maxView }: Props) {
+  const translatedProjects = maxView
+    ? projects.slice(0, maxView).map((project) => translate(project))
+    : projects.map((project) => translate(project));
+
   return (
     <section className={getStyles(styles, "ctn")}>
       <span className={getStyles(styles, "title")}>Projects</span>
       <div className={getStyles(styles, "projectCtn")}>
-        {projects.map((project) => translate(project))}
+        {translatedProjects}
       </div>
     </section>
   );
