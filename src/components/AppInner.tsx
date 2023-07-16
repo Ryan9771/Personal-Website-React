@@ -4,6 +4,7 @@ import Home from "./home/Home";
 import HomeAbout from "./homeAbout/HomeAbout";
 import About from "./about/About";
 import Projects from "./projects/Projects";
+import ViewAllProjectsBtn from "./projects/ViewAllProjectsBtn";
 
 function AppInner() {
   return (
@@ -15,6 +16,7 @@ function AppInner() {
       <About />
       <LineBreakDark />
       <Projects maxView={6} />
+      <ViewAllProjectsBtn />
     </>
   );
 }
