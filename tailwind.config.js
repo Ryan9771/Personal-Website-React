@@ -39,7 +39,7 @@ export default {
       '4': '4',
      },
      backgroundImage: {
-      'discord': "url('/Images/DiscordBot/discord1.png')",
+      'discord': "url('./src/assets/images/discord_bot/discord_1.png')",
       'calculator': "url('/Images/Calculator/calcHome.png')",
       'tictactoe' : "url('/Images/TicTacToe/tictactoeHome.png')",
       'wordle': "url('/Images/Wordle/game.png')",

@@ -1,15 +1,26 @@
 import getStyles from "../../Style";
-import ProjectLink from "./ProjectLink";
+import { translate } from "./translator";
 
 interface Props {
   maxView: number;
 }
 
-function Projects() {
+const projects = [
+  "discord",
+  "calculator",
+  "tictactoe",
+  "wordle",
+  "foobar",
+  "dataStructures",
+];
+
+function Projects({ maxView }: Props) {
   return (
     <section className={getStyles(styles, "ctn")}>
       <span className={getStyles(styles, "title")}>Projects</span>
-      <div className={getStyles(styles, "projectCtn")}></div>
+      <div className={getStyles(styles, "projectCtn")}>
+        {projects.map((project) => translate(project))}
+      </div>
     </section>
   );
 }
