@@ -7,8 +7,8 @@ import Footer from "./components/footer/Footer";
 export default function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<AppInner />} />
           <Route path="/projects" element={<Projects maxView={null} />} />

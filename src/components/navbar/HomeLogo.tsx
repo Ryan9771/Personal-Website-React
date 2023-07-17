@@ -1,8 +1,9 @@
 import getStyles from "../../Style";
+import { Link } from "react-router-dom";
 
 function HomeLogo() {
   return (
-    <a href="#" className={getStyles(styles, "ctn")}>
+    <Link to="/" className={getStyles(styles, "ctn")}>
       <div className={getStyles(styles, "iconCtn")}>
         <svg
           className={getStyles(styles, "icon")}
@@ -14,7 +15,7 @@ function HomeLogo() {
 
         <span className={getStyles(styles, "text")}>Ryan</span>
       </div>
-    </a>
+    </Link>
   );
 }
 
