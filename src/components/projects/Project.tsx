@@ -14,7 +14,7 @@ const styles = {
     "font-semibold",
   ],
   subCtn: ["flex", "flex-col", "items-center", "lg:flex-row"],
-  subSubCtn: ["flex", "items-center", "flex-col", "lg:max-w-sm"],
+  imgGroupCtn: ["flex", "items-center", "flex-col", "lg:max-w-sm"],
   images: ["flex", "flex-col", "items-center", "lg:max-w-sm"],
   image: ["rounded-xl", "w-72", "sm:w-96"],
   itrArrows: ["flex", "justify-center", "mt-5", "sm:mt-7", "gap-12"],
@@ -123,11 +123,12 @@ function Project({
     <section className={getStyles(styles, "ctn")}>
       <div className={getStyles(styles, "heading")}>{title}</div>
       <div className={getStyles(styles, "subCtn")}>
-        <div className={getStyles(styles, "subSubCtn")}>
+        <div className={getStyles(styles, "imgGroupCtn")}>
           <div className={getStyles(styles, "itrArrows")}>
             <div className={getStyles(styles, "leftArrow")}>{LeftArrow}</div>
             <div className={getStyles(styles, "rightArrow")}>{RightArrow}</div>
           </div>
+
           {/* Images */}
           <div></div>
 
