@@ -1,5 +1,5 @@
 import getStyles from "../../Style";
-import { translate } from "./translator";
+import { translate } from "./util/translator";
 
 interface Props {
   maxView: null | number;

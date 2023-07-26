@@ -1,4 +1,4 @@
-import getStyles from "../../Style";
+import getStyles from "../../../Style";
 import { useState } from "react";
 
 const styles = {

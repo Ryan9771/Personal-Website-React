@@ -1,4 +1,4 @@
-import getStyles from "../../Style";
+import getStyles from "../../../Style";
 import { Link } from "react-router-dom";
 
 function ViewAll() {

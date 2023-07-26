@@ -1,5 +1,5 @@
-import { ProjectProps } from "../Project";
-import Project from "../Project";
+import { ProjectProps } from "../util/Project";
+import Project from "../util/Project";
 import discord1 from "../../../assets/images/discord_bot/discord_1.png";
 import discord2 from "../../../assets/images/discord_bot/discord_2.png";
 import reminder from "../../../assets/images/discord_bot/reminder.png";
