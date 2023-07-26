@@ -13,31 +13,31 @@ const styles = {
     "sm:text-5xl",
     "font-semibold",
   ],
-  subCtn: ["leading-6", "lg:flex", "flex-row", "lg:items-start"],
+  subCtn: ["flex", "flex-col", "items-center", "lg:flex-row"],
   subSubCtn: ["flex", "items-center", "flex-col", "lg:max-w-sm"],
   images: ["flex", "flex-col", "items-center", "lg:max-w-sm"],
   image: ["rounded-xl", "w-72", "sm:w-96"],
-  itrArrows: ["flex", "justify-center", "mt-5", "sm:mt-7", "gap-4"],
+  itrArrows: ["flex", "justify-center", "mt-5", "sm:mt-7", "gap-12"],
   leftArrow: [
-    "w-7",
-    "h-7",
-    "sm:w-8",
-    "sm:h-8",
-    "rotate-180",
+    "w-8",
+    "h-8",
+    "sm:w-9",
+    "sm:h-9",
+    "rotate-90",
     "hover:scale-110",
     "hover:fill-lblue",
     "trans",
   ],
   rightArrow: [
-    "w-7",
-    "h-7",
-    "sm:w-8",
-    "sm:h-8",
+    "w-8",
+    "h-8",
+    "sm:w-9",
+    "sm:h-9",
     "hover:scale-110",
     "hover:fill-lblue",
     "trans",
   ],
-  githubBtn: ["mt-5", "md:mt-10"],
+  githubBtn: ["mt-10", "md:mt-12"],
   githubBtnSubCtn: [
     "bg-black",
     "flex",
@@ -91,7 +91,7 @@ const RightArrow = (
   </svg>
 );
 
-interface Props {
+export interface ProjectProps {
   title: string;
   // images: string[];
   github: string;
@@ -108,7 +108,7 @@ function Project({
   github,
   body,
   feature: { heading, list },
-}: Props) {
+}: ProjectProps) {
   const GithubIcon = (
     <svg
       className={getStyles(styles, "githubIcon")}
@@ -128,19 +128,18 @@ function Project({
             <div className={getStyles(styles, "leftArrow")}>{LeftArrow}</div>
             <div className={getStyles(styles, "rightArrow")}>{RightArrow}</div>
           </div>
-        </div>
+          {/* Images */}
+          <div></div>
 
-        {/* Images */}
-        <div></div>
-
-        {/* Github */}
-        <div className={getStyles(styles, "githubBtn")}>
-          <a className={getStyles(styles, "githubBtnSubCtn")} href={github}>
-            {GithubIcon}
-          </a>
-          <span className={getStyles(styles, "githubText")}>
-            Click to see the Repo!
-          </span>
+          {/* Github */}
+          <div className={getStyles(styles, "githubBtn")}>
+            <a className={getStyles(styles, "githubBtnSubCtn")} href={github}>
+              {GithubIcon}
+              <span className={getStyles(styles, "githubText")}>
+                Click to see the Repo!
+              </span>
+            </a>
+          </div>
         </div>
 
         {/* Main Body */}
