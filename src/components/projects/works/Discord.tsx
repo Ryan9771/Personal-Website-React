@@ -1,8 +1,10 @@
 import { ProjectProps } from "../Project";
 import Project from "../Project";
+import discord1 from "../../../assets/images/discord_bot/discord_1.png";
 
 const Template: ProjectProps = {
   title: "Bot for Discord",
+  images: [discord1],
   github: "https://github.com/Ryan9771/General-Purpose-Discord-Bot",
   body: [
     `This discord bot was made to make my school discord server lively, 

@@ -27,6 +27,8 @@ const styles = {
     "hover:scale-110",
     "hover:fill-lblue",
     "trans",
+    "rounded-full",
+    "shadow-md",
   ],
   rightArrow: [
     "w-8",
@@ -36,8 +38,10 @@ const styles = {
     "hover:scale-110",
     "hover:fill-lblue",
     "trans",
+    "rounded-full",
+    "shadow-md",
   ],
-  githubBtn: ["mt-10", "md:mt-12"],
+  githubBtn: ["mt-10", "md:mt-12", "shadow-lg"],
   githubBtnSubCtn: [
     "bg-black",
     "flex",
@@ -93,7 +97,7 @@ const RightArrow = (
 
 export interface ProjectProps {
   title: string;
-  // images: string[];
+  images: string[];
   github: string;
   body: string[];
   feature: {
@@ -102,13 +106,7 @@ export interface ProjectProps {
   };
 }
 
-function Project({
-  title,
-  // images,
-  github,
-  body,
-  feature: { heading, list },
-}: ProjectProps) {
+function Project({ title, images, github, body, feature }: ProjectProps) {
   const GithubIcon = (
     <svg
       className={getStyles(styles, "githubIcon")}
@@ -130,7 +128,11 @@ function Project({
           </div>
 
           {/* Images */}
-          <div></div>
+          <div className="w-72 sm:w-96 mt-8">
+            {images.map((img) => (
+              <img className="w-full rounded-xl shadow-lg" src={img} />
+            ))}
+          </div>
 
           {/* Github */}
           <div className={getStyles(styles, "githubBtn")}>
@@ -150,9 +152,11 @@ function Project({
             <div className={getStyles(styles, "mainPara")}>{para}</div>
           ))}
           <div className={getStyles(styles, "featureCtn")}>
-            <p className={getStyles(styles, "featureTitle")}>{heading}</p>
+            <p className={getStyles(styles, "featureTitle")}>
+              {feature.heading}
+            </p>
             <ul className={getStyles(styles, "featureList")}>
-              {list.map((item) => (
+              {feature.list.map((item) => (
                 <li>{item}</li>
               ))}
             </ul>
