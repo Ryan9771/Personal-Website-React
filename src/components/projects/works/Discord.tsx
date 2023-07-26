@@ -1,10 +1,24 @@
 import { ProjectProps } from "../Project";
 import Project from "../Project";
 import discord1 from "../../../assets/images/discord_bot/discord_1.png";
+import discord2 from "../../../assets/images/discord_bot/discord_2.png";
+import reminder from "../../../assets/images/discord_bot/reminder.png";
+import search from "../../../assets/images/discord_bot/search.png";
+import temp_n_forecase from "../../../assets/images/discord_bot/temp_n_forecase.png";
+import weuro from "../../../assets/images/discord_bot/weuro.png";
+import conversion from "../../../assets/images/discord_bot/conversion.png";
 
 const Template: ProjectProps = {
   title: "Bot for Discord",
-  images: [discord1],
+  images: [
+    discord1,
+    discord2,
+    reminder,
+    search,
+    temp_n_forecase,
+    weuro,
+    conversion,
+  ],
   github: "https://github.com/Ryan9771/General-Purpose-Discord-Bot",
   body: [
     `This discord bot was made to make my school discord server lively, 

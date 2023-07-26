@@ -1,4 +1,5 @@
 import getStyles from "../../Style";
+import { useState } from "react";
 
 const styles = {
   ctn: ["flex", "flex-col", "justify-center", "p-5", "min-w-300", "sm:p-8"],
@@ -24,22 +25,24 @@ const styles = {
     "sm:w-9",
     "sm:h-9",
     "rotate-90",
-    "hover:scale-110",
+    "hover:scale-105",
     "hover:fill-lblue",
     "trans",
     "rounded-full",
     "shadow-md",
+    "cursor-pointer",
   ],
   rightArrow: [
     "w-8",
     "h-8",
     "sm:w-9",
     "sm:h-9",
-    "hover:scale-110",
+    "hover:scale-105",
     "hover:fill-lblue",
     "trans",
     "rounded-full",
     "shadow-md",
+    "cursor-pointer",
   ],
   githubBtn: ["mt-10", "md:mt-12", "shadow-lg"],
   githubBtnSubCtn: [
@@ -107,6 +110,24 @@ export interface ProjectProps {
 }
 
 function Project({ title, images, github, body, feature }: ProjectProps) {
+  const [imgIndex, setImgIndex] = useState(0);
+
+  function decrementHandler() {
+    if (imgIndex === 0) {
+      setImgIndex(images.length - 1);
+    } else {
+      setImgIndex(imgIndex - 1);
+    }
+  }
+
+  function incrementHandler() {
+    if (imgIndex === images.length - 1) {
+      setImgIndex(0);
+    } else {
+      setImgIndex(imgIndex + 1);
+    }
+  }
+
   const GithubIcon = (
     <svg
       className={getStyles(styles, "githubIcon")}
@@ -122,16 +143,28 @@ function Project({ title, images, github, body, feature }: ProjectProps) {
       <div className={getStyles(styles, "heading")}>{title}</div>
       <div className={getStyles(styles, "subCtn")}>
         <div className={getStyles(styles, "imgGroupCtn")}>
+          {/* Iter Arrows */}
           <div className={getStyles(styles, "itrArrows")}>
-            <div className={getStyles(styles, "leftArrow")}>{LeftArrow}</div>
-            <div className={getStyles(styles, "rightArrow")}>{RightArrow}</div>
+            <div
+              className={getStyles(styles, "leftArrow")}
+              onClick={decrementHandler}
+            >
+              {LeftArrow}
+            </div>
+            <div
+              className={getStyles(styles, "rightArrow")}
+              onClick={incrementHandler}
+            >
+              {RightArrow}
+            </div>
           </div>
 
           {/* Images */}
           <div className="w-72 sm:w-96 mt-8">
-            {images.map((img) => (
-              <img className="w-full rounded-xl shadow-lg" src={img} />
-            ))}
+            <img
+              className="w-full rounded-xl shadow-lg"
+              src={images[imgIndex]}
+            />
           </div>
 
           {/* Github */}
