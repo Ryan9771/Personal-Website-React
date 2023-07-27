@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 interface Props {
   id: string;
@@ -9,7 +9,7 @@ interface Props {
 
 function ProjectLink({ id, title, description, backgroundImg }: Props) {
   return (
-    <Link to={`/projects/${id}`} className="card">
+    <HashLink to={`/projects/${id}#`} className="card">
       <div
         style={{ backgroundImage: `url(${backgroundImg})` }}
         className={"card-img trans"}
@@ -18,7 +18,7 @@ function ProjectLink({ id, title, description, backgroundImg }: Props) {
         <span className="card-head">{title}</span>
         <p className="card-head-desc-text">{description}</p>
       </div>
-    </Link>
+    </HashLink>
   );
 }
 

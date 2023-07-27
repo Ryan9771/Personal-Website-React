@@ -182,7 +182,9 @@ function Project({ title, images, github, body, feature }: ProjectProps) {
         <div className={getStyles(styles, "bodyCtn")}>
           <div className={getStyles(styles, "firstPara")}>{body[0]}</div>
           {body.slice(1).map((para) => (
-            <div className={getStyles(styles, "mainPara")}>{para}</div>
+            <div key={para} className={getStyles(styles, "mainPara")}>
+              {para}
+            </div>
           ))}
           <div className={getStyles(styles, "featureCtn")}>
             <p className={getStyles(styles, "featureTitle")}>

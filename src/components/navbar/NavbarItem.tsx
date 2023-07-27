@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import getStyles from "../../Style";
+import { HashLink } from "react-router-hash-link";
 
 interface Props {
   title: string;
@@ -12,8 +13,8 @@ function NavbarItem({ title, setFirstPage }: Props) {
       switch (title) {
         case "About": {
           return (
-            <a
-              href="#about"
+            <HashLink
+              to="/#about"
               onClick={() => setFirstPage(true)}
               className={getStyles(styles, "link")}
             >
@@ -25,13 +26,13 @@ function NavbarItem({ title, setFirstPage }: Props) {
                 <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM256 336c-18 0-32 14-32 32s13.1 32 32 32c17.1 0 32-14 32-32S273.1 336 256 336zM289.1 128h-51.1C199 128 168 159 168 198c0 13 11 24 24 24s24-11 24-24C216 186 225.1 176 237.1 176h51.1C301.1 176 312 186 312 198c0 8-4 14.1-11 18.1L244 251C236 256 232 264 232 272V288c0 13 11 24 24 24S280 301 280 288V286l45.1-28c21-13 34-36 34-60C360 159 329 128 289.1 128z" />
               </svg>
               <span className={getStyles(styles, "text")}>{title}</span>
-            </a>
+            </HashLink>
           );
         }
 
         case "Projects": {
           return (
-            <a href="#projects" className={getStyles(styles, "link")}>
+            <HashLink to="/#projects" className={getStyles(styles, "link")}>
               <svg
                 className={getStyles(styles, "svgs")}
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,7 @@ function NavbarItem({ title, setFirstPage }: Props) {
                 <path d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z" />
               </svg>
               <span className={getStyles(styles, "text")}>{title}</span>
-            </a>
+            </HashLink>
           );
         }
 
@@ -65,8 +66,8 @@ function NavbarItem({ title, setFirstPage }: Props) {
 
         case "Contact": {
           return (
-            <a
-              href="#contact"
+            <HashLink
+              to="/#contact"
               onClick={() => setFirstPage(false)}
               className={getStyles(styles, "link")}
             >
@@ -78,7 +79,7 @@ function NavbarItem({ title, setFirstPage }: Props) {
                 <path d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z" />
               </svg>
               <span className={getStyles(styles, "text")}>{title}</span>
-            </a>
+            </HashLink>
           );
         }
 

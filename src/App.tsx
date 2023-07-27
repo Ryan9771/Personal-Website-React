@@ -10,7 +10,6 @@ import Wordle from "./components/projects/works/Wordle";
 import Foobar from "./components/projects/works/Foobar";
 import DataStructures from "./components/projects/works/DataStructures";
 import { useState } from "react";
-import ScrollToTop from "./components/util/ScrollToTop";
 
 export default function App() {
   const [firstPage, setFirstPage] = useState(true);
@@ -18,7 +17,8 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
+        {/* <ScrollToElem /> */}
         <Navbar setFirstPage={setFirstPage} />
         <Routes>
           <Route
