@@ -6,6 +6,9 @@ import Footer from "./components/footer/Footer";
 import Discord from "./components/projects/works/Discord";
 import Calculator from "./components/projects/works/Calculator";
 import TicTacToe from "./components/projects/works/TicTacToe";
+import Wordle from "./components/projects/works/Wordle";
+import Foobar from "./components/projects/works/Foobar";
+import DataStructures from "./components/projects/works/DataStructures";
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
           <Route path="/projects/discord" element={<Discord />} />
           <Route path="/projects/calculator" element={<Calculator />} />
           <Route path="/projects/tictactoe" element={<TicTacToe />} />
+          <Route path="/projects/wordle" element={<Wordle />} />
+          <Route path="/projects/foobar" element={<Foobar />} />
+          <Route path="/projects/dataStructures" element={<DataStructures />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -45,7 +45,7 @@ export const translate = (id: string) => {
           id="foobar"
           title="Google Foobar"
           description="Solutions to Google's secret Foobar challenge"
-          backgroundImg="/src/assets/images/google_foobar/solutions.png"
+          backgroundImg="/src/assets/images/googleFoobar/solutions.png"
         />
       );
     case "dataStructures":
@@ -54,7 +54,7 @@ export const translate = (id: string) => {
           id="dataStructures"
           title="Data Structures"
           description="Over 13 data structures, in Java"
-          backgroundImg="/src/assets/images/data_structures/structures.png"
+          backgroundImg="/src/assets/images/dataStructures/structures.png"
         />
       );
   }
