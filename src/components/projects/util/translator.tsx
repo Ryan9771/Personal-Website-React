@@ -8,7 +8,7 @@ export const translate = (id: string) => {
           id="discord"
           title="Discord Bot"
           description="An interactive bot for my school discord server"
-          backgroundImg="/src/assets/images/discord_bot/discord_1.png"
+          backgroundImg="/src/assets/images/discordBot/discord1.png"
         />
       );
     case "calculator":
@@ -17,7 +17,7 @@ export const translate = (id: string) => {
           id="calculator"
           title="iOS Calculator Clone"
           description="A clone of the famous iOS calculator"
-          backgroundImg="/src/assets/images/calculator/calc_home.png"
+          backgroundImg="/src/assets/images/calculator/calcHome.png"
         />
       );
     case "tictactoe":
@@ -26,7 +26,7 @@ export const translate = (id: string) => {
           id="tictactoe"
           title="Tic Tac Toe"
           description="A single and multiplayer tic tac toe game"
-          backgroundImg="/src/assets/images/tic_tac_toe/tic_tac_toe_home.png"
+          backgroundImg="/src/assets/images/ticTacToe/ticTacToeHome.png"
         />
       );
     case "wordle":

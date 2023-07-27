@@ -128,14 +128,14 @@ const styles = {
 const img1 = (
   <img
     className={getStyles(styles, "imgTop")}
-    src="/src/assets/images/top_right.png"
+    src="/src/assets/images/topRight.png"
     alt=""
   />
 );
 const img2 = (
   <img
     className={getStyles(styles, "imgBtm")}
-    src="/src/assets/images/btm_left.png"
+    src="/src/assets/images/btmLeft.png"
     alt=""
   />
 );

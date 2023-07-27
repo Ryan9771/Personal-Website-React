@@ -1,12 +1,11 @@
-import { ProjectProps } from "../util/Project";
-import Project from "../util/Project";
-import discord1 from "../../../assets/images/discord_bot/discord_1.png";
-import discord2 from "../../../assets/images/discord_bot/discord_2.png";
-import reminder from "../../../assets/images/discord_bot/reminder.png";
-import search from "../../../assets/images/discord_bot/search.png";
-import temp_n_forecase from "../../../assets/images/discord_bot/temp_n_forecase.png";
-import weuro from "../../../assets/images/discord_bot/weuro.png";
-import conversion from "../../../assets/images/discord_bot/conversion.png";
+import Project, { ProjectProps } from "../util/Project";
+import discord1 from "../../../assets/images/discordBot/discord1.png";
+import discord2 from "../../../assets/images/discordBot/discord2.png";
+import reminder from "../../../assets/images/discordBot/reminder.png";
+import search from "../../../assets/images/discordBot/search.png";
+import temp_n_forecase from "../../../assets/images/discordBot/tempNForecast.png";
+import weuro from "../../../assets/images/discordBot/weuro.png";
+import conversion from "../../../assets/images/discordBot/conversion.png";
 
 const Template: ProjectProps = {
   title: "Bot for Discord",
