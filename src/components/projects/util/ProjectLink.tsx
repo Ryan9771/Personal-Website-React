@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 
 interface Props {
-  key: string;
+  id: string;
   title: string;
   description: string;
   backgroundImg: string;
 }
 
-function ProjectLink({ key, title, description, backgroundImg }: Props) {
+function ProjectLink({ id, title, description, backgroundImg }: Props) {
   return (
-    <Link to={`/projects/${key}`} className="card">
+    <Link to={`/projects/${id}`} className="card">
       <div
         style={{ backgroundImage: `url(${backgroundImg})` }}
         className={"card-img trans"}

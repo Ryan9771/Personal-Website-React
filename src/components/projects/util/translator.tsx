@@ -5,7 +5,7 @@ export const translate = (id: string) => {
     case "discord":
       return (
         <ProjectLink
-          key="discord"
+          id="discord"
           title="Discord Bot"
           description="An interactive bot for my school discord server"
           backgroundImg="/src/assets/images/discord_bot/discord_1.png"
@@ -14,7 +14,7 @@ export const translate = (id: string) => {
     case "calculator":
       return (
         <ProjectLink
-          key="calculator"
+          id="calculator"
           title="iOS Calculator Clone"
           description="A clone of the famous iOS calculator"
           backgroundImg="/src/assets/images/calculator/calc_home.png"
@@ -23,7 +23,7 @@ export const translate = (id: string) => {
     case "tictactoe":
       return (
         <ProjectLink
-          key="tictactoe"
+          id="tictactoe"
           title="Tic Tac Toe"
           description="A single and multiplayer tic tac toe game"
           backgroundImg="/src/assets/images/tic_tac_toe/tic_tac_toe_home.png"
@@ -32,7 +32,7 @@ export const translate = (id: string) => {
     case "wordle":
       return (
         <ProjectLink
-          key="wordle"
+          id="wordle"
           title="Wordle Clone"
           description="A fully functioning Wordle game"
           backgroundImg="/src/assets/images/wordle/game.png"
@@ -42,7 +42,7 @@ export const translate = (id: string) => {
     case "foobar":
       return (
         <ProjectLink
-          key="foobar"
+          id="foobar"
           title="Google Foobar"
           description="Solutions to Google's secret Foobar challenge"
           backgroundImg="/src/assets/images/google_foobar/solutions.png"
@@ -51,7 +51,7 @@ export const translate = (id: string) => {
     case "dataStructures":
       return (
         <ProjectLink
-          key="dataStructures"
+          id="dataStructures"
           title="Data Structures"
           description="Over 13 data structures, in Java"
           backgroundImg="/src/assets/images/data_structures/structures.png"
