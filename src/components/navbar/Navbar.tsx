@@ -7,10 +7,10 @@ function Navbar() {
     <nav className={getStyles(styles, "ctn")}>
       <HomeLogo />
       <ul className={getStyles(styles, "list")}>
-        <NavbarItem id="about-nav" href="#about" title="About" />
-        <NavbarItem id="" href="#projects" title="Projects" />
-        <NavbarItem id="" href="https://github.com/Ryan9771" title="Github" />
-        <NavbarItem id="contact-nav" href="#contact" title="Contact" />
+        <NavbarItem title="About" />
+        <NavbarItem title="Projects" />
+        <NavbarItem title="Github" />
+        <NavbarItem title="Contact" />
       </ul>
     </nav>
   );
