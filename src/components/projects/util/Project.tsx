@@ -14,7 +14,7 @@ const styles = {
     "sm:text-5xl",
     "font-semibold",
   ],
-  subCtn: ["flex", "flex-col", "items-center", "lg:flex-row"],
+  subCtn: ["flex", "flex-col", "items-center", "lg:flex-row", "lg:items-start"],
   imgGroupCtn: ["flex", "items-center", "flex-col", "lg:max-w-sm"],
   images: ["flex", "flex-col", "items-center", "lg:max-w-sm"],
   image: ["rounded-xl", "w-72", "sm:w-96"],
