@@ -2,7 +2,7 @@ import getStyles from "../../Style";
 
 function GeneralInfo() {
   return (
-    <div className={getStyles(styles, "ctn")}>
+    <div id="about" className={getStyles(styles, "ctn")}>
       <div className={getStyles(styles, "titleCtn")}>
         <span className={getStyles(styles, "titleCtnText")}>About Me</span>
       </div>

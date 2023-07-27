@@ -1,14 +1,12 @@
 import getStyles from "../../Style";
-import { useState } from "react";
 
 import GeneralInfo from "./GeneralInfo";
 import ContactInfo from "./ContactInfo";
 import ArrowButton from "./ArrowButton";
 import TabButton from "./TabButton";
+import { AboutProps } from "../AppInner";
 
-function About() {
-  const [firstPage, setFirstPage] = useState(true);
-
+function About({ firstPage, setFirstPage }: AboutProps) {
   return (
     <>
       <section className={getStyles(styles, "ctn")}>

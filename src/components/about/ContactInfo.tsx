@@ -66,7 +66,7 @@ const blog = (
 
 function ContactInfo() {
   return (
-    <div className={getStyles(styles, "ctn")}>
+    <div id="contact" className={getStyles(styles, "ctn")}>
       <div className={getStyles(styles, "titleCtn")}>
         <span className={getStyles(styles, "title")}>Get in Touch!</span>
       </div>

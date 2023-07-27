@@ -2,15 +2,19 @@ import getStyles from "../../Style";
 import NavbarItem from "./NavbarItem";
 import HomeLogo from "./HomeLogo";
 
-function Navbar() {
+function Navbar({
+  setFirstPage,
+}: {
+  setFirstPage: (firstPage: boolean) => void;
+}) {
   return (
     <nav className={getStyles(styles, "ctn")}>
       <HomeLogo />
       <ul className={getStyles(styles, "list")}>
-        <NavbarItem title="About" />
-        <NavbarItem title="Projects" />
-        <NavbarItem title="Github" />
-        <NavbarItem title="Contact" />
+        <NavbarItem setFirstPage={setFirstPage} title="About" />
+        <NavbarItem setFirstPage={setFirstPage} title="Projects" />
+        <NavbarItem setFirstPage={setFirstPage} title="Github" />
+        <NavbarItem setFirstPage={setFirstPage} title="Contact" />
       </ul>
     </nav>
   );

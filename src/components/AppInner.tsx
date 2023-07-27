@@ -6,14 +6,19 @@ import About from "./about/About";
 import Projects from "./projects/Projects";
 import ViewAllProjectsBtn from "./projects/util/ViewAllProjectsBtn";
 
-function AppInner() {
+export interface AboutProps {
+  firstPage: boolean;
+  setFirstPage: (firstPage: boolean) => void;
+}
+
+function AppInner({ firstPage, setFirstPage }: AboutProps) {
   return (
     <>
       <Home />
       <LineBreakLight />
       <HomeAbout />
       <LineBreakLight />
-      <About />
+      <About firstPage={firstPage} setFirstPage={setFirstPage} />
       <LineBreakDark />
       <Projects maxView={6} />
       <ViewAllProjectsBtn />

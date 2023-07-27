@@ -9,14 +9,22 @@ import TicTacToe from "./components/projects/works/TicTacToe";
 import Wordle from "./components/projects/works/Wordle";
 import Foobar from "./components/projects/works/Foobar";
 import DataStructures from "./components/projects/works/DataStructures";
+import { useState } from "react";
 
 export default function App() {
+  const [firstPage, setFirstPage] = useState(true);
+
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Navbar setFirstPage={setFirstPage} />
         <Routes>
-          <Route path="/" element={<AppInner />} />
+          <Route
+            path="/"
+            element={
+              <AppInner firstPage={firstPage} setFirstPage={setFirstPage} />
+            }
+          />
           <Route path="/projects" element={<Projects maxView={null} />} />
           <Route path="/projects/discord" element={<Discord />} />
           <Route path="/projects/calculator" element={<Calculator />} />
