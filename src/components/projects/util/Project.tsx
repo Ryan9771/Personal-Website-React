@@ -189,8 +189,8 @@ function Project({ title, images, github, body, feature }: ProjectProps) {
               {feature.heading}
             </p>
             <ul className={getStyles(styles, "featureList")}>
-              {feature.list.map((item) => (
-                <li>{item}</li>
+              {feature.list.map((item, key) => (
+                <li key={key}>{item}</li>
               ))}
             </ul>
           </div>
