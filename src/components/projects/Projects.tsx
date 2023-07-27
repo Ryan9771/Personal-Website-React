@@ -20,7 +20,7 @@ function Projects({ maxView }: Props) {
     : projects.map((project) => translate(project));
 
   return (
-    <section className={getStyles(styles, "ctn")}>
+    <section id="projects" className={getStyles(styles, "ctn")}>
       <span className={getStyles(styles, "title")}>Projects</span>
       <div className={getStyles(styles, "projectCtn")}>
         {translatedProjects}
