@@ -1,7 +1,7 @@
 import getStyles from "../../Style";
-import topRight from "../../../assets/images/topRight.png";
-import btmLeft from "../../../assets/images/btmLeft.png";
-import greece from "../../../assets/images/greece.png";
+import topRight from "../../assets/images/topRight.png";
+import btmLeft from "../../assets/images/btmLeft.png";
+import greece from "../../assets/images/greece.png";
 
 function Home() {
   return (
