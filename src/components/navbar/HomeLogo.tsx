@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 
 function HomeLogo() {
   return (
-    <HashLink to="/#projects" className={getStyles(styles, "ctn")}>
+    <HashLink to="/" className={getStyles(styles, "ctn")}>
       <div className={getStyles(styles, "iconCtn")}>
         <svg
           className={getStyles(styles, "icon")}

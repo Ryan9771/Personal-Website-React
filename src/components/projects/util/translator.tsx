@@ -1,4 +1,10 @@
 import ProjectLink from "./ProjectLink";
+import discord from "../../../assets/images/discordBot/discord1.png";
+import calculator from "../../../assets/images/calculator/calcHome.png";
+import tictactoe from "../../../assets/images/ticTacToe/ticTacToeHome.png";
+import wordle from "../../../assets/images/wordle/game.png";
+import foobar from "../../../assets/images/googleFoobar/solutions.png";
+import dataStructures from "../../../assets/images/dataStructures/structures.png";
 
 export const translate = (id: string) => {
   switch (id) {
@@ -9,7 +15,7 @@ export const translate = (id: string) => {
           key={id}
           title="Discord Bot"
           description="An interactive bot for my school discord server"
-          backgroundImg="/src/assets/images/discordBot/discord1.png"
+          backgroundImg={discord}
         />
       );
     case "calculator":
@@ -19,7 +25,7 @@ export const translate = (id: string) => {
           key={id}
           title="iOS Calculator Clone"
           description="A clone of the famous iOS calculator"
-          backgroundImg="/src/assets/images/calculator/calcHome.png"
+          backgroundImg={calculator}
         />
       );
     case "tictactoe":
@@ -29,7 +35,7 @@ export const translate = (id: string) => {
           key={id}
           title="Tic Tac Toe"
           description="A single and multiplayer tic tac toe game"
-          backgroundImg="/src/assets/images/ticTacToe/ticTacToeHome.png"
+          backgroundImg={tictactoe}
         />
       );
     case "wordle":
@@ -39,7 +45,7 @@ export const translate = (id: string) => {
           key={id}
           title="Wordle Clone"
           description="A fully functioning Wordle game"
-          backgroundImg="/src/assets/images/wordle/game.png"
+          backgroundImg={wordle}
         />
       );
 
@@ -50,7 +56,7 @@ export const translate = (id: string) => {
           key={id}
           title="Google Foobar"
           description="Solutions to Google's secret Foobar challenge"
-          backgroundImg="/src/assets/images/googleFoobar/solutions.png"
+          backgroundImg={foobar}
         />
       );
     case "dataStructures":
@@ -60,7 +66,7 @@ export const translate = (id: string) => {
           key={id}
           title="Data Structures"
           description="Over 13 data structures, in Java"
-          backgroundImg="/src/assets/images/dataStructures/structures.png"
+          backgroundImg={dataStructures}
         />
       );
   }
