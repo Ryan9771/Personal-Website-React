@@ -1,4 +1,7 @@
 import getStyles from "../../Style";
+import topRight from "../../../assets/images/topRight.png";
+import btmLeft from "../../../assets/images/btmLeft.png";
+import greece from "../../../assets/images/greece.png";
 
 function Home() {
   return (
@@ -126,25 +129,11 @@ const styles = {
 
 /* IMG CONSTANTS */
 const img1 = (
-  <img
-    className={getStyles(styles, "imgTop")}
-    src="/src/assets/images/topRight.png"
-    alt=""
-  />
+  <img className={getStyles(styles, "imgTop")} src={topRight} alt="" />
 );
 const img2 = (
-  <img
-    className={getStyles(styles, "imgBtm")}
-    src="/src/assets/images/btmLeft.png"
-    alt=""
-  />
+  <img className={getStyles(styles, "imgBtm")} src={btmLeft} alt="" />
 );
-const img3 = (
-  <img
-    className={getStyles(styles, "img")}
-    src="/src/assets/images/greece.png"
-    alt=""
-  />
-);
+const img3 = <img className={getStyles(styles, "img")} src={greece} alt="" />;
 
 export default Home;
