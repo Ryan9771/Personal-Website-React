@@ -17,8 +17,6 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <ScrollToTop /> */}
-        {/* <ScrollToElem /> */}
         <Navbar setFirstPage={setFirstPage} />
         <Routes>
           <Route

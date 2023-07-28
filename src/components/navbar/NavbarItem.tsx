@@ -87,7 +87,7 @@ function NavbarItem({ title, setFirstPage }: Props) {
         }
       }
     },
-    [title]
+    [title, setFirstPage]
   );
 
   return <li className={getStyles(styles, "ctn")}>{target(title)}</li>;
