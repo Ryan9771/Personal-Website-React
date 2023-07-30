@@ -5,6 +5,7 @@ import tictactoe from "../../../assets/images/ticTacToe/ticTacToeHome.png";
 import wordle from "../../../assets/images/wordle/game.png";
 import foobar from "../../../assets/images/googleFoobar/solutions.png";
 import dataStructures from "../../../assets/images/dataStructures/structures.png";
+import ecommute from "../../../assets/images/ecommute/homePage.png";
 
 export const translate = (id: string) => {
   switch (id) {
@@ -67,6 +68,16 @@ export const translate = (id: string) => {
           title="Data Structures"
           description="Over 13 data structures, in Java"
           backgroundImg={dataStructures}
+        />
+      );
+    case "ecommute":
+      return (
+        <ProjectLink
+          id="ecommute"
+          key={id}
+          title="Ecommute"
+          description="A new way to search for properties"
+          backgroundImg={ecommute}
         />
       );
   }

@@ -12,7 +12,7 @@ function ProjectLink({ id, title, description, backgroundImg }: Props) {
     <HashLink to={`/projects/${id}#`} className="card">
       <div
         style={{ backgroundImage: `url(${backgroundImg})` }}
-        className={"card-img trans"}
+        className={"card-img trans bg-center"}
       ></div>
       <div className="card-head-desc">
         <span className="card-head">{title}</span>

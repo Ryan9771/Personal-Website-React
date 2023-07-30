@@ -1,5 +1,7 @@
 import AppInner from "./components/AppInner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
@@ -9,7 +11,7 @@ import TicTacToe from "./components/projects/works/TicTacToe";
 import Wordle from "./components/projects/works/Wordle";
 import Foobar from "./components/projects/works/Foobar";
 import DataStructures from "./components/projects/works/DataStructures";
-import { useState } from "react";
+import Ecommute from "./components/projects/works/Ecommute";
 
 export default function App() {
   const [firstPage, setFirstPage] = useState(true);
@@ -32,6 +34,7 @@ export default function App() {
           <Route path="/projects/wordle" element={<Wordle />} />
           <Route path="/projects/foobar" element={<Foobar />} />
           <Route path="/projects/dataStructures" element={<DataStructures />} />
+          <Route path="/projects/ecommute" element={<Ecommute />} />
         </Routes>
       </BrowserRouter>
       <Footer />
