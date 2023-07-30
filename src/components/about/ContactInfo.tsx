@@ -1,4 +1,5 @@
 import getStyles from "../../Style";
+import ryanResume from "../../assets/files/ryanResume.pdf";
 
 const linkedIn = (
   <a href="https://www.linkedin.com/in/ryanpatel21/" className="contact-icons">
@@ -14,11 +15,7 @@ const linkedIn = (
 );
 
 const resume = (
-  <a
-    className="contact-icons"
-    href="../../assets/files/ryanResume.pdf"
-    target="_blank"
-  >
+  <a className="contact-icons" href={ryanResume} target="_blank">
     <svg
       className="contact-icon"
       xmlns="http://www.w3.org/2000/svg"
