@@ -6,6 +6,7 @@ import wordle from "../../../assets/images/wordle/game.png";
 import foobar from "../../../assets/images/googleFoobar/solutions.png";
 import dataStructures from "../../../assets/images/dataStructures/structures.png";
 import ecommute from "../../../assets/images/ecommute/homePage.png";
+import wacc from "../../../assets/images/wacc/wacc.png";
 
 export const translate = (id: string) => {
   switch (id) {
@@ -78,6 +79,16 @@ export const translate = (id: string) => {
           title="Ecommute"
           description="A new way to search for properties"
           backgroundImg={ecommute}
+        />
+      );
+    case "wacc":
+      return (
+        <ProjectLink
+          id="wacc"
+          key={id}
+          title="Wacc Compiler"
+          description="A full compiler and executer for a made up language"
+          backgroundImg={wacc}
         />
       );
   }

@@ -13,6 +13,7 @@ const projects = [
   "foobar",
   "dataStructures",
   "ecommute",
+  "wacc",
 ];
 
 function Projects({ maxView }: Props) {

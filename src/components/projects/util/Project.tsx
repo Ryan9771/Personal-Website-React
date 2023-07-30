@@ -18,7 +18,7 @@ const styles = {
   imgGroupCtn: ["flex", "items-center", "flex-col", "lg:max-w-sm"],
   images: ["flex", "flex-col", "items-center", "lg:max-w-sm"],
   image: ["rounded-xl", "w-72", "sm:w-96"],
-  itrArrows: ["flex", "justify-center", "mt-5", "sm:mt-7", "gap-12"],
+  itrArrows: ["flex", "justify-center", "mt-5", "sm:mt-0", "gap-12"],
   leftArrow: [
     "w-8",
     "h-8",
