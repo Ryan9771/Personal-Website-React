@@ -87,7 +87,7 @@ function ContactInfo() {
             {linkedIn}
             {resume}
             {email}
-            {blog}
+            {/* {blog} */}
           </div>
         </div>
       </div>
