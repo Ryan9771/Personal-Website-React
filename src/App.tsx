@@ -13,6 +13,7 @@ import Foobar from "./components/projects/works/Foobar";
 import DataStructures from "./components/projects/works/DataStructures";
 import Ecommute from "./components/projects/works/Ecommute";
 import Wacc from "./components/projects/works/Wacc";
+import Pintos from "./components/projects/works/Pintos";
 
 export default function App() {
   const [firstPage, setFirstPage] = useState(true);
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/projects/dataStructures" element={<DataStructures />} />
           <Route path="/projects/ecommute" element={<Ecommute />} />
           <Route path="/projects/wacc" element={<Wacc />} />
+          <Route path="/projects/pintos" element={<Pintos />} />
         </Routes>
       </BrowserRouter>
       <Footer />

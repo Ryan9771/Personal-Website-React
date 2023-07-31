@@ -7,6 +7,7 @@ import foobar from "../../../assets/images/googleFoobar/solutions.png";
 import dataStructures from "../../../assets/images/dataStructures/structures.png";
 import ecommute from "../../../assets/images/ecommute/homePage.png";
 import wacc from "../../../assets/images/wacc/wacc.png";
+import pintos from "../../../assets/images/pintos/pintos.png";
 
 export const translate = (id: string) => {
   switch (id) {
@@ -89,6 +90,17 @@ export const translate = (id: string) => {
           title="Wacc Compiler"
           description="A full compiler and executer for a made up language"
           backgroundImg={wacc}
+        />
+      );
+
+    case "pintos":
+      return (
+        <ProjectLink
+          id="pintos"
+          key={id}
+          title="Pintos Operating System"
+          description="A simple operating system framework for the 80x86 architecture"
+          backgroundImg={pintos}
         />
       );
   }

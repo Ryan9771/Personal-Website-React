@@ -14,6 +14,7 @@ const projects = [
   "dataStructures",
   "ecommute",
   "wacc",
+  "pintos",
 ];
 
 function Projects({ maxView }: Props) {

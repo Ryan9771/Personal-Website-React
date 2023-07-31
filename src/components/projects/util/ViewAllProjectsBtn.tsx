@@ -5,7 +5,7 @@ function ViewAll() {
   return (
     <section className={getStyles(styles, "ctn")}>
       <HashLink to="/projects#" className={getStyles(styles, "link")}>
-        <span className={getStyles(styles, "text")}>View All</span>
+        <span className={getStyles(styles, "text")}>View More</span>
         <svg
           className={getStyles(styles, "icon")}
           xmlns="http://www.w3.org/2000/svg"
