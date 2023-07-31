@@ -82,12 +82,9 @@ function NavbarItem({ title, setFirstPage }: Props) {
             </HashLink>
           );
         }
-
-        default: {
-        }
       }
     },
-    [title, setFirstPage]
+    [setFirstPage]
   );
 
   return <li className={getStyles(styles, "ctn")}>{target(title)}</li>;
