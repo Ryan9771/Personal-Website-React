@@ -15,6 +15,7 @@ const projects = [
   "ecommute",
   "wacc",
   "pintos",
+  "foodBuddy",
 ];
 
 function Projects({ maxView }: Props) {

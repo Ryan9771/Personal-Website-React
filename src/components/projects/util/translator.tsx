@@ -8,6 +8,7 @@ import dataStructures from "../../../assets/images/dataStructures/structures.png
 import ecommute from "../../../assets/images/ecommute/homePage.png";
 import wacc from "../../../assets/images/wacc/wacc.png";
 import pintos from "../../../assets/images/pintos/pintos.png";
+import dashboard from "../../../assets/images/foodBuddy/dashboard.png";
 
 export const translate = (id: string) => {
   switch (id) {
@@ -101,6 +102,16 @@ export const translate = (id: string) => {
           title="Pintos Operating System"
           description="A simple operating system framework for the 80x86 architecture"
           backgroundImg={pintos}
+        />
+      );
+    case "foodBuddy":
+      return (
+        <ProjectLink
+          id="foodBuddy"
+          key={id}
+          title="Food Buddy"
+          description="An app to reduce food waste among students"
+          backgroundImg={dashboard}
         />
       );
   }
