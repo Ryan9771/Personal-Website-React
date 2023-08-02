@@ -98,7 +98,7 @@ const styles = {
   ],
   infoSecondTextCtn: ["mt-3", "px-3"],
   infoSecondText: ["about-text-ctn-text"],
-  link: ["color:rgb(57, 57, 167)"],
+  link: ["color:rgb(57, 57, 167)", "mr-1"],
   titleCtn: [
     "py-2",
     "text-center",
