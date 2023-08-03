@@ -28,7 +28,7 @@ function GeneralInfo() {
               I love Web and App development. I have made multiple repositories
               on{" "}
               <a
-                className={getStyles(styles, "link")}
+                className={getStyles(styles, "linkGithub")}
                 href="https://github.com/Ryan9771"
                 target="_blank"
               >
@@ -38,7 +38,7 @@ function GeneralInfo() {
               Machine learning, after having constructed an OCR-related API in
               python involving these areas, during my internship at
               <a
-                className={getStyles(styles, "link")}
+                className={getStyles(styles, "linkIntern")}
                 href="https://thewalnut.ai/"
                 target="_blank"
               >
@@ -98,7 +98,8 @@ const styles = {
   ],
   infoSecondTextCtn: ["mt-3", "px-3"],
   infoSecondText: ["about-text-ctn-text"],
-  link: ["color:rgb(57, 57, 167)", "mr-1"],
+  linkGithub: ["color:rgb(57, 57, 167)", "mr-1", "text-blue-800"],
+  linkIntern: ["color:rgb(57, 57, 167)", "ml-1", "text-blue-800"],
   titleCtn: [
     "py-2",
     "text-center",
