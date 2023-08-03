@@ -1,5 +1,5 @@
 import AppInner from "./components/AppInner";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import Navbar from "./components/navbar/Navbar";
@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar setFirstPage={setFirstPage} />
         <Routes>
           <Route
@@ -42,7 +42,7 @@ export default function App() {
           <Route path="/projects/pintos" element={<Pintos />} />
           <Route path="/projects/foodBuddy" element={<FoodBuddy />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </>
   );
