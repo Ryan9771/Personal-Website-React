@@ -2,7 +2,11 @@ import getStyles from "../../Style";
 import ryanResume from "../../assets/files/ryanResume.pdf";
 
 const linkedIn = (
-  <a href="https://www.linkedin.com/in/ryanpatel21/" className="contact-icons">
+  <a
+    href="https://www.linkedin.com/in/ryanpatel21/"
+    className="contact-icons"
+    target="_blank"
+  >
     <svg
       className="contact-icon"
       xmlns="http://www.w3.org/2000/svg"
