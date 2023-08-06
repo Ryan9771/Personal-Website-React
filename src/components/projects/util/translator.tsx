@@ -9,6 +9,7 @@ import ecommute from "../../../assets/images/ecommute/homePage.png";
 import wacc from "../../../assets/images/wacc/wacc.png";
 import pintos from "../../../assets/images/pintos/pintos.png";
 import dashboard from "../../../assets/images/foodBuddy/dashboard.png";
+import projects from "../../../assets/images/personalWebsite/projects.png";
 
 export const translate = (id: string) => {
   switch (id) {
@@ -112,6 +113,16 @@ export const translate = (id: string) => {
           title="Food Buddy"
           description="An app to reduce food waste among students"
           backgroundImg={dashboard}
+        />
+      );
+    case "personalWebsite":
+      return (
+        <ProjectLink
+          id="personalWebsite"
+          key={id}
+          title="Personal Website"
+          description="A progression of my personal website"
+          backgroundImg={projects}
         />
       );
   }

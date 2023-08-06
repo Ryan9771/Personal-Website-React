@@ -15,6 +15,7 @@ import Ecommute from "./components/projects/works/Ecommute";
 import Wacc from "./components/projects/works/Wacc";
 import Pintos from "./components/projects/works/Pintos";
 import FoodBuddy from "./components/projects/works/FoodBuddy";
+import PersonalWebsite from "./components/projects/works/PersonalWebsite";
 
 export default function App() {
   const [firstPage, setFirstPage] = useState(true);
@@ -41,6 +42,10 @@ export default function App() {
           <Route path="/projects/wacc" element={<Wacc />} />
           <Route path="/projects/pintos" element={<Pintos />} />
           <Route path="/projects/foodBuddy" element={<FoodBuddy />} />
+          <Route
+            path="/projects/personalWebsite"
+            element={<PersonalWebsite />}
+          />
         </Routes>
       </HashRouter>
       <Footer />
