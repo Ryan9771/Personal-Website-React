@@ -24,7 +24,7 @@ function Navbar({
 const styles = {
   ctn: [
     "bg-primary",
-    "z-50",
+    "z-40",
     "w-full",
     "fixed",
     "top-0",

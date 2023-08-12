@@ -16,6 +16,7 @@ import Wacc from "./components/projects/works/Wacc";
 import Pintos from "./components/projects/works/Pintos";
 import FoodBuddy from "./components/projects/works/FoodBuddy";
 import PersonalWebsite from "./components/projects/works/PersonalWebsite";
+import Dmi from "./components/dmi/Dmi";
 
 export default function App() {
   const [firstPage, setFirstPage] = useState(true);
@@ -45,6 +46,13 @@ export default function App() {
           <Route
             path="/projects/personalWebsite"
             element={<PersonalWebsite />}
+          />
+          <Route path="/dmi" element={<Dmi />} />
+          <Route
+            path="*"
+            element={
+              <AppInner firstPage={firstPage} setFirstPage={setFirstPage} />
+            }
           />
         </Routes>
       </HashRouter>
