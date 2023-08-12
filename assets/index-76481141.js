@@ -129,7 +129,7 @@ PERFORMANCE OF THIS SOFTWARE.
         scheduler with priority donation, a user program memory allocator, a
         virtual memory system and a file system.`,`Working on all of these features was a great learning experience that 
         taught me more about the underlying complexities of the devices we use 
-        everyday.`],feature:{heading:"Some Featuers",list:["Semaphores, mutexes, condition variables, and read-write locks","Priority Scheduler","Multi-level Feedback Queue Scheduler","Multi-level Feedback Queue Scheduler with Priority Donation","User Program Memory Allocator","Virtual Memory System","File System"]}};function j1(){return u.jsx(He,{...C1})}const E1="/assets/fridge-08e97560.png",N1="/assets/recipes-8d68e0a1.png",P1={title:"Food Buddy",images:[Dd,E1,N1],github:"https://github.com/tangboxuan/drp-23",body:[`Food Buddy is a web application that primarily aims to reduce food 
+        everyday.`],feature:{heading:"Some Featuers",list:["Semaphores, mutexes, condition variables, and read-write locks","Priority Scheduler","Multi-level Feedback Queue Scheduler","Multi-level Feedback Queue Scheduler with Priority Donation","User Program Memory Allocator","Virtual Memory System","File System"]}};function j1(){return u.jsx(He,{...C1})}const E1="/assets/fridge-08e97560.png",N1="/assets/recipes-8d68e0a1.png",P1={title:"Food Buddy",images:[Dd,E1,N1],github:"https://github.com/tangboxuan/drp-23",body:[`Food Buddy is a progressive web application that primarily aims to reduce food 
         waste among students. It does so by maintaining a list of food items 
         that the student has in their fridge, while also alerting users when 
         their ingredients are about to expire. Furthermore, the app also 
