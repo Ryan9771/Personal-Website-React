@@ -8,7 +8,7 @@ const Template: ProjectProps = {
   images: [dashboard, fridge, recipes],
   github: "https://github.com/tangboxuan/drp-23",
   body: [
-    `Food Buddy is a web application that primarily aims to reduce food 
+    `Food Buddy is a progressive web application that primarily aims to reduce food 
         waste among students. It does so by maintaining a list of food items 
         that the student has in their fridge, while also alerting users when 
         their ingredients are about to expire. Furthermore, the app also 
