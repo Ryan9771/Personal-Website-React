@@ -17,6 +17,7 @@ import Pintos from "./components/projects/works/Pintos";
 import FoodBuddy from "./components/projects/works/FoodBuddy";
 import PersonalWebsite from "./components/projects/works/PersonalWebsite";
 import Dmi from "./components/dmi/Dmi";
+import Temp from "./components/temp/Temp";
 
 export default function App() {
   const [firstPage, setFirstPage] = useState(true);
@@ -48,6 +49,7 @@ export default function App() {
             element={<PersonalWebsite />}
           />
           <Route path="/dmi" element={<Dmi />} />
+          <Route path="/themes/cottage" element={<Temp />} />
           <Route
             path="*"
             element={
