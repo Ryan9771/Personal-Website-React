@@ -13,12 +13,12 @@ function GeneralInfo() {
         <div>
           <div className={getStyles(styles, "infoFirstHeading")}>General</div>
           <div className={getStyles(styles, "infoFirstText")}>
-            I am a 2nd year computing student at Imperial College London. I am a
-            fast learner, since my journey in this field began only a year ago.
-            In the span of a year, I have learnt multiple languages, frameworks,
-            and touched different areas such as AI and Machine learning.
-            Computing is truly a remarkable field that I wish to pursue to make
-            more information readily accessible to people.
+            I am a penultimate year computing student at Imperial College
+            London. I am a fast learner, since my journey in this field began
+            only a year ago. In the span of a year, I have learnt multiple
+            languages, frameworks, and touched different areas such as AI and
+            Machine learning. Computing is truly a remarkable field that I wish
+            to pursue to make more information readily accessible to people.
           </div>
           <div className={getStyles(styles, "infoSecondHeading")}>
             Interests
