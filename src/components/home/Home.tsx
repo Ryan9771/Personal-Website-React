@@ -13,7 +13,7 @@ function Home() {
           <span className={getStyles(styles, "heyThere")}>Hey there,</span>
           <span className={getStyles(styles, "imRyan")}>I'm Ryan</span>
           <span className={getStyles(styles, "intro")}>Hey there! I'm</span>
-          <span className={getStyles(styles, "name")}>Ryan Patel</span>
+          <span className={getStyles(styles, "name")}>Ryan</span>
           <span className={getStyles(styles, "miniText")}>
             A technology graduate analyst at Capula Investment Management
           </span>
