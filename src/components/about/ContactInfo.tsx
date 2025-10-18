@@ -48,23 +48,6 @@ const email = (
   </a>
 );
 
-// const blog = (
-//   <a
-//     className="contact-icons"
-//     href="https://medium.com/@ryanpatel2001"
-//     target="_blank"
-//   >
-//     <svg
-//       className="contact-icon"
-//       xmlns="http://www.w3.org/2000/svg"
-//       viewBox="0 0 512 512"
-//     >
-//       <path d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144V368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144H128v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48V144z" />
-//     </svg>
-//     <span className="contact-text">My Blog</span>
-//   </a>
-// );
-
 function ContactInfo() {
   return (
     <div id="contact" className={getStyles(styles, "ctn")}>
@@ -80,18 +63,16 @@ function ContactInfo() {
             Feel free to collaborate or reach out
           </div>
           <div className={getStyles(styles, "collaborateTextCtn")}>
-            I love to create and collaborate on projects with people. Previous
-            group projects include making an emulator and an assembler in C.
-            Ongoing projects that I am undertaking include a discord bot for the
-            Imperial Computing server, a Pintos project, and a public website to
-            help creators find good colour palettes for their colour theme.
+            I love to create and collaborate on projects. Some group projects
+            that I have worked on include making an emulator-assembler in C, a
+            compiler of a custom language, along with tackling the Pintos
+            operating system challenge.
           </div>
 
           <div className={getStyles(styles, "linkButtonsCtn")}>
             {linkedIn}
             {resume}
             {email}
-            {/* {blog} */}
           </div>
         </div>
       </div>

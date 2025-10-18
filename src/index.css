@@ -37,7 +37,7 @@ html, body {
     }
 
     .contact-icon {
-        @apply w-6 h-6 fill-inherit mr-2;
+        @apply w-6 h-6 fill-inherit mr-2 justify-center;
     }
 
 

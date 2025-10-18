@@ -13,20 +13,19 @@ function GeneralInfo() {
         <div>
           <div className={getStyles(styles, "infoFirstHeading")}>General</div>
           <div className={getStyles(styles, "infoFirstText")}>
-            I am a penultimate year computing student at Imperial College
-            London. I am a fast learner, since my journey in this field began
-            only a year ago. In the span of a year, I have learnt multiple
-            languages, frameworks, and touched different areas such as AI and
-            Machine learning. Computing is truly a remarkable field that I wish
-            to pursue to make more information readily accessible to people.
+            Hi, I'm a Technology Graduate Analyst at Capula Investment
+            Management and a Computer Science master's graduate from Imperial
+            College London. I'm passionate about building intelligent systems
+            that combine software engineering, AI, and data to solve real-world
+            problems. Outside of work, I enjoy playing snooker, music and
+            constantly learning how things work behind the scenes.
           </div>
           <div className={getStyles(styles, "infoSecondHeading")}>
             Interests
           </div>
           <div className={getStyles(styles, "infoSecondTextCtn")}>
             <span className={getStyles(styles, "infoSecondText")}>
-              I love Web and App development. I have made multiple repositories
-              on{" "}
+              I sometimes dabble in projects that I like to put on my{" "}
               <a
                 className={getStyles(styles, "linkGithub")}
                 href="https://github.com/Ryan9771"
@@ -34,16 +33,9 @@ function GeneralInfo() {
               >
                 GitHub
               </a>
-              experimenting with React Native. I am also interested in AI and
-              Machine learning, after having constructed an OCR-related API in
-              python involving these areas, during my internship at
-              <a
-                className={getStyles(styles, "linkIntern")}
-                href="https://thewalnut.ai/"
-                target="_blank"
-              >
-                The Walnut.ai
-              </a>
+              . Some of these include the very website you're on right now, some
+              AI projects, along with small-scale experimentation projects with
+              different tools.
             </span>
           </div>
         </div>
