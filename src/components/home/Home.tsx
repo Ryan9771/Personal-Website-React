@@ -1,7 +1,7 @@
 import getStyles from "../../Style";
 import topRight from "../../assets/images/topRight.png";
 import btmLeft from "../../assets/images/btmLeft.png";
-import greece from "../../assets/images/greece.png";
+import pfp from "../../assets/images/profilePic.png";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
           <span className={getStyles(styles, "intro")}>Hey there! I'm</span>
           <span className={getStyles(styles, "name")}>Ryan Patel</span>
           <span className={getStyles(styles, "miniText")}>
-            A penultimate year computing student at Imperial College London
+            A technology graduate analyst at Capula Investment Management
           </span>
         </div>
 
@@ -114,15 +114,14 @@ const styles = {
     "sm:ml-36",
     "sm:text-md",
   ],
-  imgBox: ["flex", "justify-center", "sm:mt-16", "md:mt-0"],
+  imgBox: ["flex", "justify-center", "shadow-lg", "sm:mt-16", "md:mt-0"],
   img: [
-    "w-80",
+    "w-64",
     "mt-8",
     "rounded-xl",
     "border",
     "border-black",
-    "lg:w-[360px]",
-    "lg:hover:w-[370px]",
+    "lg:w-[300px]",
     "trans",
   ],
 };
@@ -134,6 +133,6 @@ const img1 = (
 const img2 = (
   <img className={getStyles(styles, "imgBtm")} src={btmLeft} alt="" />
 );
-const img3 = <img className={getStyles(styles, "img")} src={greece} alt="" />;
+const img3 = <img className={getStyles(styles, "img")} src={pfp} alt="" />;
 
 export default Home;
